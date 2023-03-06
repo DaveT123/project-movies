@@ -29,10 +29,10 @@ export default function Header() {
                             Watch List
                         </NavLink>
                     </Nav>
-                    <Button variant="outline-info" className="me-2">
+                    <Button variant="outline-info" className="me-2" href="/login">
                         Login
                     </Button>
-                    <Button variant="outline-info">Register</Button>
+                    <Button variant="outline-info" href="/register">Register</Button>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

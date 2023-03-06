@@ -1,0 +1,15 @@
+.review-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.review-box img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  /* adjust image size for screens smaller than 768px */
+  .review-box {
+      flex-direction: column;
+  }
+}

@@ -1,3 +1,4 @@
+import "./Reviews.css"
 import { useEffect, useRef } from "react";
 import api from "../../api/axiosConfig";
 import { useParams } from "react-router-dom";
@@ -35,12 +36,12 @@ export default function Reviews({ getMovieData, movie, reviews, setReviews }) {
 
     return (
         <Container>
-            <Row>
+            <Row className="mt-2">
                 <Col>
                     <h3>Reviews</h3>
                 </Col>
             </Row>
-            <Row className="mt-2">
+            <Row className="mt-2 review-box">
                 <Col>
                     <img src={movie?.poster} alt="movie-poster" />
                 </Col>
