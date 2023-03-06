@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -29,10 +29,14 @@ export default function Header() {
                             Watch List
                         </NavLink>
                     </Nav>
-                    <Button variant="outline-info" className="me-2" href="/login">
-                        Login
-                    </Button>
-                    <Button variant="outline-info" href="/register">Register</Button>
+                    <Link to="/login">
+                        <Button variant="outline-info" className="me-2" href="/login">
+                            Login
+                        </Button>
+                    </Link>
+                    <Link to="/register">
+                        <Button variant="outline-info">Register</Button>
+                    </Link>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
